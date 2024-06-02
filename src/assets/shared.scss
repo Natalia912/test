@@ -1,0 +1,50 @@
+$text-color: #1b1b1b;
+$blue: #5451FF;
+
+.button {
+  color: white;
+  background-color: $blue;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+
+  &--icon {
+    line-height: 0;
+  }
+}
+
+.button:hover, .button:focus, .button:active {
+  background-color: #5451ffe1;
+}
+
+.input {
+  padding: 4px;
+  font-size: 16px;
+  border-radius: 4px;
+  color: $text-color;
+  border: 1px solid #9B9B9B;
+  &::placeholder {
+    color: $text-color;
+  }
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  & label {
+    font-size: 10px;
+    color: $text-color;
+    text-transform: uppercase;
+  }
+  & input {
+    width: 255px;
+  }
+}
