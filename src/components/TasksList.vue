@@ -11,7 +11,7 @@
 </template>
 <!--  -->
 <script setup lang="ts">
-import { onMounted, watch } from 'vue';
+import { onMounted } from 'vue';
 import { useTasksStore } from '../store/tasksStore';
 import TaskElement from './TaskElement.vue'
 import { Task, TaskID } from '../types';
